@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Triangulo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center aling items-center vh 100">
+
+            <!---Configurando Bootstrap-->
+
+            <!--Lado A-->
+            <div class="row">
+                <div class="col">
+                    <label for="ladoa" class="form-label fw-bold text-dark">Lado A</label>
+                    <input type="number" name="TXTladoa" id="TXTladoa" class="form-control"> 
+                </div>
+            </div>
+            
+            <!--Lado B-->
+            <div class="row">
+                <div class="col">
+            <label for="ladob" class="form-label fw-bold text-dark">Lado B</label>
+        <input type="number" name="TXTladob" id="TXTladob" class="form-control">
+    </div>
+        </div>
+        
+        <!--Lado C-->
+        <div class="row">
+        <div class="col">
+        <label for="ladoC" class="form-label fw-bold text-dark">Lado C</label>
+        <input type="number" name="TXTladoC" id="TXTladoC" class="form-control">
+    </div>
+    </div>
+        
+    <!--Triângulo-->
+        <div class="row">
+            <div class="col">
+                <label class="form-label fw-bold text-dark">Triângulo: </label>
+                <label class="form-label fw-bold text-dark" name="lblTriangulo" id="lblTriangulo"></label>
+        </div>
+        
+        <!--Botão Calcular-->
+        <div class="row"></div>
+        <div class="col">
+            <button class="btn btn-primary mt-2" name="calcular" id="calcular" onclick="calcular()">
+                Calcular
+            </button>
+        </div>
+        <!--Botão Limpar-->
+        <div class="col">
+        <button class="btn btn-danger mt-2" name="btnlimpar" id="btnlimpar" onclick="limpar()">
+            Limpar
+        </button>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+</html>
